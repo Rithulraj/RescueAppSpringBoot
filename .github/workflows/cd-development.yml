@@ -7,6 +7,10 @@ on:
 jobs:
   build-and-package:
     runs-on: ubuntu-latest
+
+    # CRITICAL: This links your job to the GitHub environment you just created
+    environment: development
+
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
