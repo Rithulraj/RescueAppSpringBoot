@@ -39,7 +39,7 @@ jobs:
     - name: SonarQube Analysis
       run: |
         ./mvnw sonar:sonar \
-        -Dsonar.organization=Rithulraj \
+        -Dsonar.organization=rithulraj \
         -Dsonar.projectKey=Rithulraj_RescueAppSpringBoot \
         -Dsonar.token=${{ secrets.SONAR_TOKEN }}  
 
